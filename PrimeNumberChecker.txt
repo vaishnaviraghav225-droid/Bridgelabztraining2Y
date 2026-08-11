@@ -1,0 +1,22 @@
+
+BEGIN
+
+    INPUT N
+
+    IF N <= 1 THEN
+        OUTPUT "Not Prime"
+        STOP
+    END IF
+
+    FOR i ← 2 TO √N DO
+
+        IF N MOD i = 0 THEN
+            OUTPUT "Not Prime"
+            STOP
+        END IF
+
+    END FOR
+
+    OUTPUT "Prime"
+
+END

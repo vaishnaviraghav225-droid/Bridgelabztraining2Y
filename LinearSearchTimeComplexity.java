@@ -1,0 +1,34 @@
+public class LinearSearchTimeComplexity {
+/*Time Complexity:
+Best Case: O(1)
+Average Case: O(n)
+Worst Case: O(n)*/
+
+
+
+    public static int linearSearch(int[] arr, int target) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;               }
+        }
+
+        return -1;  
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {8, 61, 2, 3, 4, 0};
+
+        // Change the target value to test
+        int target = 8;
+
+        int result = linearSearch(arr, target);
+
+        if (result != -1) {
+            System.out.println("Element found at index: " + result);
+        } else {
+            System.out.println("Element not found");
+        }
+    }
+}
